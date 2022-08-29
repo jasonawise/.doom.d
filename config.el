@@ -88,7 +88,7 @@
 ;;   '(org-level-4 ((t (:inherit outline-4 :height 1.0))))
 ;;   '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
 ;; )
-
+;;
 ;; this starts emacs in fullscreen
 (set-frame-parameter nil 'fullscreen 'fullboth)
 ;; To get information about any of these functions/macros, move the cursor over
@@ -100,3 +100,5 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 ;;(setq doom-font (:size 16))
+(setq web-mode-content-types-alist
+  '(("jsx" . "\\.js[x]?\\'")))
