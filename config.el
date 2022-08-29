@@ -89,7 +89,7 @@
 ;;   '(org-level-5 ((t (:inherit outline-5 :height 1.0))))
 ;; )
 ;;
-;; this starts emacs in fullscreen
+;; this starts emacs in fullscree n
 (set-frame-parameter nil 'fullscreen 'fullboth)
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
@@ -102,3 +102,11 @@
 ;;(setq doom-font (:size 16))
 (setq web-mode-content-types-alist
   '(("jsx" . "\\.js[x]?\\'")))
+
+;; (map! :leader
+      ;; (:prefix-map ("b" . "buffer")
+      ;;  (:prefix ("j" . "journal")
+      ;;   :desc "New journal entry" "j" #'org-journal-new-entry
+      ;;   :desc "Search journal entry" "s" #'org-journal-search)))
+
+(global-set-key (kbd "C-M-s-j") 'evil-window-next)
